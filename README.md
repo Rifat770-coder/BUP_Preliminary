@@ -8,6 +8,13 @@ solar + battery).
 > Built for the **BUP CSE FEST 2026 — Preliminary Round**.
 
 ---
+## 🌐 Live Deployment
+
+| # | Service | URL |
+|---|---------|-----|
+| 🌍 | **Live Application** | https://www.projectshow.me |
+| 📚 | **API Documentation (Swagger UI)** | https://www.projectshow.me/docs |
+| 💚 | **Health Check** | https://www.projectshow.me/health |
 
 ## 01. Problem Statement
 
