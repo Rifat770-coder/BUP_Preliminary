@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GridWise LLM — Smart Campus Energy Optimization</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">⚡</div>
+      <div class="brand-text">
+        <h1>GridWise LLM</h1>
+        <p>Smart Campus Energy Optimization
+          <span class="dot-sep">·</span>
+          LLM-Assisted Operator Directive Interpretation</p>
+      </div>
+    </div>
+    <div class="status" id="apiStatus" title="Backend health">
+      <span class="dot" id="statusDot"></span>
+      <span id="statusLabel">Checking…</span>
+    </div>
+  </header>
+
+  <section class="pipeline" aria-label="Processing pipeline">
+    <div class="step">Operator Notes</div>
+    <div class="arrow">→</div>
+    <div class="step">LLM Interpreter</div>
+    <div class="arrow">→</div>
+    <div class="step">Guardrail Validator</div>
+    <div class="arrow">→</div>
+    <div class="step">Math Optimizer</div>
+    <div class="arrow">→</div>
+    <div class="step">Replay Validator</div>
+    <div class="arrow">→</div>
+    <div class="step">Optimized Plan</div>
+  </section>
+
+  <main class="container">
+    <section class="card">
+      <div class="card-header">
+        <h2>Energy Optimization Request</h2>
+        <div class="card-actions">
+          <button type="button" class="btn btn-ghost" id="loadDemoBtn">Load Demo Scenario</button>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="field-label">Operator Notes <span class="muted">(1–3)</span></label>
+        <div id="notesList" class="notes-list"></div>
+        <button type="button" class="btn btn-ghost btn-sm" id="addNoteBtn" disabled>+ Add note</button>
+      </div>
+
+      <details class="scenario-collapse">
+        <summary>Scenario Data <span class="muted">(scenario_id, 24 hours, battery)</span></summary>
+        <textarea id="scenarioJson" spellcheck="false" rows="14"></textarea>
+        <p class="muted small">Edit JSON to fine-tune the scenario. The backend will validate it.</p>
+      </details>
+
+      <div class="actions">
+        <button type="button" class="btn btn-primary" id="optimizeBtn" disabled>
+          Optimize Energy Plan
+        </button>
+        <span class="hint" id="loadingHint" hidden>Analyzing operator directives…</span>
+      </div>
+      <div id="errorBox" class="error-box" hidden></div>
+    </section>
+
+    <section class="card" id="resultsCard" hidden>
+      <div class="card-header">
+        <h2>LLM Directive Interpretation</h2>
+      </div>
+      <div id="directives" class="directives"></div>
+    </section>
+
+    <section class="card" id="summaryCard" hidden>
+      <div class="card-header"><h2>Optimization Summary</h2></div>
+      <div class="summary-grid">
+        <div class="metric">
+          <div class="metric-label">Total Grid Energy</div>
+          <div class="metric-value" id="metricGrid">—</div>
+          <div class="metric-unit">kWh</div>
+        </div>
+        <div class="metric metric-accent">
+          <div class="metric-label">Total Cost</div>
+          <div class="metric-value" id="metricCost">—</div>
+          <div class="metric-unit">BDT</div>
+        </div>
+        <div class="metric">
+          <div class="metric-label">Peak Grid</div>
+          <div class="metric-value" id="metricPeak">—</div>
+          <div class="metric-unit">kWh</div>
+        </div>
+        <div class="metric metric-muted">
+          <div class="metric-label">Scenario</div>
+          <div class="metric-value small" id="metricScenario">—</div>
+        </div>
+      </div>
+      <p class="muted small" id="planSummary"></p>
+    </section>
+
+    <section class="card" id="planCard" hidden>
+      <div class="card-header"><h2>24-Hour Optimized Energy Plan</h2></div>
+      <div class="table-wrap">
+        <table class="plan-table">
+          <thead>
+            <tr>
+              <th>Hour</th>
+              <th>Grid (kWh)</th>
+              <th>Solar Used (kWh)</th>
+              <th>Battery Action</th>
+              <th>Battery (kWh)</th>
+              <th>Battery Energy After (kWh)</th>
+            </tr>
+          </thead>
+          <tbody id="planBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card" id="chartCard" hidden>
+      <div class="card-header"><h2>24-Hour Energy Chart</h2></div>
+      <div class="chart-wrap"><canvas id="energyChart" height="120"></canvas></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>GridWise LLM · Hackathon Demo · Backend handles all LLM calls</span>
+  </footer>
+</body>
+</html>

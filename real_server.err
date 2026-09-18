@@ -1,0 +1,39 @@
+INFO:     Started server process [15712]
+INFO:     Waiting for application startup.
+2026-09-18 21:25:17,565 INFO gridwise startup app_version=1.0.0 app_env=dev production_mode=False llm_provider=openai llm_model=gpt-5.6-luna llm_base_url=(default) timeout_s=20.0 host=0.0.0.0 port=8000
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2026-09-18 21:26:03,664 INFO gridwise.llm llm_call provider=openai_compatible model=gpt-5.6-luna
+2026-09-18 21:26:05,195 INFO httpx HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-09-18 21:26:08,264 INFO httpx HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 21:26:08,284 INFO gridwise scenario_id=demo-001 notes=1 elapsed_ms=4620 total_grid=166.95 total_cost=1366.96
+2026-09-18 21:29:08,792 INFO gridwise.llm llm_call provider=openai_compatible model=gpt-5.6-luna
+2026-09-18 21:29:10,257 INFO httpx HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-09-18 21:29:14,913 INFO httpx HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 21:29:14,915 INFO gridwise.llm llm_call provider=openai_compatible model=gpt-5.6-luna
+2026-09-18 21:29:16,240 INFO httpx HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-09-18 21:29:22,965 INFO httpx HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 21:29:22,977 WARNING gridwise service error 500: Optimization infeasible: linear program did not converge: status=2 message=The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)
+2026-09-18 21:29:45,575 INFO gridwise.llm llm_call provider=openai_compatible model=gpt-5.6-luna
+2026-09-18 21:29:47,209 INFO httpx HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-09-18 21:29:50,069 INFO httpx HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 21:29:50,073 INFO gridwise.llm llm_call provider=openai_compatible model=gpt-5.6-luna
+2026-09-18 21:29:53,047 INFO httpx HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-09-18 21:29:56,864 INFO httpx HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 21:29:56,869 WARNING gridwise service error 500: LLM interpretation failed: LLM interpretation failed guardrails after retry: note_index=0 no_op structured_adjustment must be null; missing note_index entries: [0]
+2026-09-18 21:30:25,919 INFO gridwise.llm llm_call provider=openai_compatible model=gpt-5.6-luna
+2026-09-18 21:30:26,975 INFO httpx HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-09-18 21:30:31,394 INFO httpx HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 21:30:31,410 INFO gridwise scenario_id=demo-001 notes=1 elapsed_ms=5491 total_grid=166.95 total_cost=1366.96
+2026-09-18 21:31:32,160 INFO gridwise.llm llm_call provider=openai_compatible model=gpt-5.6-luna
+2026-09-18 21:31:33,468 INFO httpx HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-09-18 21:31:36,028 INFO httpx HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 21:31:36,046 INFO gridwise scenario_id=demo-001 notes=1 elapsed_ms=3886 total_grid=155.22 total_cost=1279.01
+2026-09-18 21:32:55,678 INFO gridwise.llm llm_call provider=openai_compatible model=gpt-5.6-luna
+2026-09-18 21:32:57,505 INFO httpx HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-09-18 21:33:00,736 INFO httpx HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 21:33:00,758 INFO gridwise scenario_id=demo-001 notes=1 elapsed_ms=5080 total_grid=158.15 total_cost=1300.99
+2026-09-18 21:35:55,440 INFO gridwise.llm llm_call provider=openai_compatible model=gpt-5.6-luna
+2026-09-18 21:35:57,187 INFO httpx HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-09-18 21:36:00,156 INFO httpx HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 21:36:00,173 INFO gridwise scenario_id=demo-001 notes=1 elapsed_ms=4733 total_grid=158.15 total_cost=1300.99

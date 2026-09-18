@@ -1,0 +1,30 @@
+version: "3.9"
+
+services:
+  gridwise:
+    build: .
+    image: gridwise-llm:latest
+    container_name: gridwise-llm
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      # APP_ENV=production forces the app to refuse boot if LLM_PROVIDER=mock
+      # or if any required credential is missing. Leave APP_ENV blank (or set to
+      # "dev") to permit the mock provider for local testing.
+      APP_ENV: ${APP_ENV:-dev}
+      LLM_PROVIDER: ${LLM_PROVIDER:-mock}
+      LLM_API_KEY: ${LLM_API_KEY:-}
+      LLM_MODEL: ${LLM_MODEL:-}
+      LLM_BASE_URL: ${LLM_BASE_URL:-}
+      LLM_TIMEOUT_SECONDS: ${LLM_TIMEOUT_SECONDS:-12}
+      HOST: 0.0.0.0
+      PORT: "8000"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request,json,sys; \
+r=urllib.request.urlopen('http://127.0.0.1:8000/health',timeout=3); \
+d=json.loads(r.read()); sys.exit(0 if d.get('status')=='ok' else 1)"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s

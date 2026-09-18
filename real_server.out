@@ -1,0 +1,80 @@
+INFO:     127.0.0.1:54807 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54807 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54807 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52579 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52579 - "GET /static/styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54815 - "GET /static/app.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54815 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54815 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53060 - "GET /static/app.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52598 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56069 - "POST /optimize-energy HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56069 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52091 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63772 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58922 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58922 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51875 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51875 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53086 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51290 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51325 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53364 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58237 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59099 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51166 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56928 - "POST /optimize-energy HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:58415 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51469 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61948 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65463 - "POST /optimize-energy HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:54227 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61843 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61843 - "POST /optimize-energy HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52675 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51121 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52074 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54223 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53583 - "POST /optimize-energy HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53583 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61473 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52405 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52405 - "GET /static/styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53255 - "GET /static/app.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53255 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53106 - "GET /static/app.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57277 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61642 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63312 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63312 - "POST /optimize-energy HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63044 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49513 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49824 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52824 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50985 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65462 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55164 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62574 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62574 - "GET /static/styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:61206 - "GET /static/app.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:61206 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57118 - "GET /static/app.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:52846 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56807 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54256 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56890 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64554 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51556 - "POST /optimize-energy HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60639 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63065 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58787 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59164 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54597 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51129 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57826 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60479 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61287 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65341 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59908 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55349 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52594 - "GET /health HTTP/1.1" 200 OK
