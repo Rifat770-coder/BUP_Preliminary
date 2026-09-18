@@ -1,13 +1,45 @@
+# ----- Environment / secrets -----
+# Never commit real credentials. .env holds real keys locally;
+# .env.example is the committed template with placeholders only.
 .env
+.env.*
+!.env.example
+
+# Backup / alt env files that might also contain real keys.
+.env.bak
+.env.local
+.env.production
+.env.staging
+*.env
+
+# Editor / IDE local state
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python
 __pycache__/
 *.pyc
+*.pyo
 .pytest_cache/
 .venv/
 venv/
 env/
-.vscode/
-.idea/
+*.egg-info/
+build/
+dist/
+
+# OS / logs
 *.log
 logs/
 .DS_Store
-.env
+Thumbs.db
+
+# Puku editor state (stores an embedded index of project files,
+# which can incidentally contain secrets read during indexing).
+.puku/
+*.db
+*.db-shm
+*.db-wal
