@@ -39,7 +39,11 @@ Thumbs.db
 
 # Puku editor state (stores an embedded index of project files,
 # which can incidentally contain secrets read during indexing).
+# Both the directory AND every file under it must be ignored.
 .puku/
+.puku/**
+/.puku
+/.puku/*
 *.db
 *.db-shm
 *.db-wal

@@ -22,7 +22,9 @@ from tests.conftest import default_battery, make_hour, make_scenario
 client = TestClient(app, raise_server_exceptions=False)
 
 # A bogus key we definitely do NOT want showing up in any error response.
-_FAKE_KEY = "sk-NEVER-LEAK-ME-1234567890abcdef"
+# Use a non-prefixed placeholder so secret scanners (e.g. GitHub push
+# protection) do not flag this test fixture as a real OpenAI key.
+_FAKE_KEY = "TEST-FAKE-KEY-DO-NOT-LEAK-1234567890abcdef"
 
 
 def _assert_no_secrets(response_text: str) -> None:
